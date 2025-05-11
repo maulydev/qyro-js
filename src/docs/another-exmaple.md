@@ -7,3 +7,8 @@ title: Another
 ```python
 import pandas as pd
 ```
+
+| Feature   | Description          | Another    |
+|-----------|----------------------|------------|
+| Tables    | Rendered beautifully | Something  |
+| Headings  | Styled consistently  | Everything |

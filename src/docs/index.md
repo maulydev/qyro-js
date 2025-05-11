@@ -2,7 +2,7 @@
 title: Getting Started
 ---
 
-### ✅ 1. Install Tailwind CSS & Dependencies
+# ✅ 1. Install Tailwind CSS & Dependencies
 
 From your project root, run:
 
