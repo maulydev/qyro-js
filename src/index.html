@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Qyro JS - Docs</title>
+    <link rel="stylesheet" href="/global.css" />
+  </head>
+  <body class="h-screen bg-gray-50 dark:bg-gray-900">
+    <div class="flex h-screen overflow-hidden">
+      <!-- Sidebar -->
+      <aside
+        id="sidebar"
+        class="min-w-64 w-96 bg-white dark:bg-gray-900 h-full p-6 shadow-xl border-r border-gray-200 dark:border-gray-800 flex flex-col justify-between"
+      >
+        <div>
+          <h1 class="font-bold text-2xl text-blue-600 mb-6">Qyro JS</h1>
+          <hr class="my-4 border-gray-200 dark:border-gray-700" />
+          <nav class="flex-1 overflow-y-auto">
+            <ul id="menu" class="space-y-2"></ul>
+          </nav>
+        </div>
+        <footer id="footer" class="text-sm text-gray-500 mt-6">
+          Powered by <span class="text-blue-500">Qyro JS</span>
+        </footer>
+      </aside>
+
+      <!-- Main Content Area -->
+      <main
+        id="app"
+        class="bg-gray-100 dark:bg-gray-800 w-full h-full overflow-y-auto relative"
+      >
+        <header class="sticky top-0 z-10 bg-gray-100 dark:bg-gray-800 p-4 shadow-md">
+          <h2 class="text-xl font-semibold text-gray-800 dark:text-gray-100">Documentation</h2>
+        </header>
+
+        <div
+          id="doc"
+          class="max-w-7xl mx-auto bg-white dark:bg-gray-900 dark:text-gray-100 rounded-md p-6"
+        >
+          <!-- Rendered Markdown content will appear here -->
+        </div>
+      </main>
+    </div>
+
+    <script type="module" src="/main.ts"></script>
+  </body>
+</html>

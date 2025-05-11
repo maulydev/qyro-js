@@ -1,0 +1,30 @@
+{
+  "name": "qyro",
+  "version": "1.0.0",
+  "main": "main.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "keywords": [],
+  "author": "Mauly dotDev",
+  "license": "MIT",
+  "description": "A markdown-to-HTML documentation generator built with Vite and TypeScript",
+  "devDependencies": {
+    "@types/markdown-it": "^14.1.2",
+    "@types/node": "^22.15.17",
+    "markdown-it": "^14.1.0",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.8.3",
+    "vite": "^6.3.5",
+    "vite-plugin-css": "^1.0.4"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.1.6",
+    "gray-matter": "^4.0.3",
+    "markdown-it-front-matter": "^0.2.4",
+    "tailwindcss": "^4.1.6"
+  }
+}
