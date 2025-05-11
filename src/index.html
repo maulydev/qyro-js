@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,13 +14,14 @@
         class="min-w-64 w-96 bg-white dark:bg-gray-900 h-full p-6 shadow-xl border-r border-gray-200 dark:border-gray-800 flex flex-col justify-between"
       >
         <div>
-          <h1 class="font-bold text-2xl text-blue-600 mb-6">Qyro JS</h1>
+          <h1 class="font-bold text-2xl text-blue-600 mb-4">Qyro JS</h1>
           <hr class="my-4 border-gray-200 dark:border-gray-700" />
           <nav class="flex-1 overflow-y-auto">
             <ul id="menu" class="space-y-2"></ul>
           </nav>
         </div>
         <footer id="footer" class="text-sm text-gray-500 mt-6">
+        <hr class="my-4 border-gray-200 dark:border-gray-700" />
           Powered by <span class="text-blue-500">Qyro JS</span>
         </footer>
       </aside>
@@ -30,13 +31,23 @@
         id="app"
         class="bg-gray-100 dark:bg-gray-800 w-full h-full overflow-y-auto relative"
       >
-        <header class="sticky top-0 z-10 bg-gray-100 dark:bg-gray-800 p-4 shadow-md">
-          <h2 class="text-xl font-semibold text-gray-800 dark:text-gray-100">Documentation</h2>
+        <header
+          class="sticky top-0 z-10 bg-gray-100 dark:bg-gray-800 p-4 shadow-md flex items-center justify-between"
+        >
+          <h2 class="text-xl font-semibold text-gray-800 dark:text-gray-100">
+            Documentation
+          </h2>
+          <button
+            id="theme-button"
+            class="dark:text-gray-100 bg-gray-200 dark:bg-gray-900 px-4 py-2 rounded"
+          >
+            theme
+          </button>
         </header>
 
         <div
           id="doc"
-          class="max-w-7xl mx-auto bg-white dark:bg-gray-900 dark:text-gray-100 rounded-md p-6"
+          class="max-w-7xl mx-auto prose dark:prose-invert p-6 min-h-full"
         >
           <!-- Rendered Markdown content will appear here -->
         </div>
@@ -44,5 +55,6 @@
     </div>
 
     <script type="module" src="/main.ts"></script>
+    <script src="/theme.ts"></script>
   </body>
 </html>
