@@ -1,11 +1,11 @@
 import routes from "./router";
 
-const appElement = document.getElementById("doc");
+const docElement = document.getElementById("doc");
 
 export async function renderPage(pathname: string) {
   const route = routes.find((r) => r.path === pathname);
-  if (!route || !appElement) {
-    appElement!.innerHTML = "<h1>404 - Page Not Found</h1>";
+  if (!route || !docElement) {
+    docElement!.innerHTML = "<h1>404 - Page Not Found</h1>";
     return;
   }
 
@@ -15,6 +15,6 @@ export async function renderPage(pathname: string) {
     metadata?: { title?: string };
   };
 
-  appElement.innerHTML = html;
-  document.title = metadata?.title ? `${metadata.title} | Qyro JS` : "Qyro JS";
+  docElement.innerHTML = html;
+  document.title = metadata?.title ? `${metadata.title} | Qyro-js` : "Qyro-js";
 }

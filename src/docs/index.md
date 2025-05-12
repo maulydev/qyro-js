@@ -1,5 +1,6 @@
 ---
 title: Getting Started
+order: 1
 ---
 
 # ✅ 1. Install Tailwind CSS & Dependencies

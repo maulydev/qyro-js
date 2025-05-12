@@ -1,5 +1,6 @@
 ---
 title:  Installation
+order: 2
 ---
 
 Great! Let's now **configure Vite** to use our custom Markdown plugin (`mdPlugin`) in the `vite.config.ts` file.

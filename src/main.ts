@@ -13,11 +13,10 @@ window.addEventListener("popstate", () => {
 function renderMenu(menuElement: HTMLElement): void {
   menuElement.innerHTML = ""; // Clear existing menu items
 
-  routes.forEach((route) => {
+  routes.sort((a, b) => (a.meta?.order || 999) - (b.meta?.order || 999)).forEach((route) => {
     const linkText =
       route.meta?.title ||
-      route.path.replace("/", "").replace(/-/g, " ") ||
-      "Home";
+      route.path.replace("/", "").replace(/-/g, " ") || "Home";
 
     const li = document.createElement("li");
     li.innerHTML = `<a href="${route.path}" class="menu-link">${linkText}</a>`;
