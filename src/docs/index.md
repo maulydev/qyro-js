@@ -23,7 +23,7 @@ This will create two new files:
 
 **Edit `tailwind.config.js`:**
 
-```js
+```javascript
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [

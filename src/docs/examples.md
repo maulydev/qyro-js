@@ -1,5 +1,6 @@
 ---
 title: Examples
+order: 3
 ---
 
 ## Examples

@@ -1,5 +1,6 @@
 ---
 title: Another
+order: 4
 ---
 
 ## Another Examples
@@ -12,3 +13,5 @@ import pandas as pd
 |-----------|----------------------|------------|
 | Tables    | Rendered beautifully | Something  |
 | Headings  | Styled consistently  | Everything |
+
+

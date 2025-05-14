@@ -1,3 +1,5 @@
 export default {
-  title: "My qyro docs",
+  title: "Qyro-js",
+  headerTitle: "Qyro-js Documentation",
+  sidebarTitle: "Qyro-js Sidebar",
 };

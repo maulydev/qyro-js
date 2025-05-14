@@ -22,7 +22,7 @@ for (const path in pages) {
       order: file.metadata?.order || 0,
     },
   });
-  console.log("path:", path.replace("./docs/", "/").replace(".md", ""));
 }
 
 export default routes;
+

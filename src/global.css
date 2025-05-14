@@ -6,4 +6,107 @@
   .menu-link {
     @apply block px-4 py-2 text-gray-700 dark:text-gray-100 hover:bg-teal-100 dark:hover:bg-gray-800 hover:text-teal-700 dark:hover:text-teal-100 rounded-md transition-colors duration-200 ease-in-out;
   }
+  .sidebar {
+    @apply min-w-64 w-96 bg-white dark:bg-gray-900 h-full p-6 shadow-xl border-r border-gray-200 dark:border-gray-800 flex flex-col justify-between;
+  }
+  .title {
+    @apply font-bold text-3xl bg-gradient-to-r from-teal-400 to-purple-600 bg-clip-text text-transparent mb-4;
+  }
+  .divider {
+    @apply my-4 border-gray-200 dark:border-gray-700;
+  }
+  .footer {
+    @apply text-sm text-gray-500 mt-6 dark:text-teal-100;
+  }
+  .powered-by {
+    @apply bg-gradient-to-r from-teal-400 to-purple-600 bg-clip-text text-transparent;
+  }
+  .main-content {
+    @apply bg-gray-100 dark:bg-gray-800 w-full h-full overflow-y-auto relative;
+  }
+  .header {
+    @apply sticky top-0 z-10 bg-gray-100 dark:bg-gray-800 p-4 shadow-md flex items-center justify-between;
+  }
+  .header-title {
+    @apply text-xl font-semibold text-gray-800 dark:text-gray-100;
+  }
+  .theme-button {
+    @apply dark:text-gray-100 bg-gray-200 dark:bg-gray-900 px-4 py-2 rounded;
+  }
+  .doc-content {
+    @apply max-w-7xl mx-auto prose dark:prose-invert p-6 min-h-full;
+  }
+
+
+
+
+
+  /* SYNTAX HIGHLIGHTER - ATOM ONE DARK */
+  pre code.hljs {
+    @apply p-[1rem] overflow-x-auto block;
+  }
+  code.hljs {
+    @apply !px-3 !py-5;
+  }
+  .hljs {
+    @apply text-[#abb2bf] dark:bg-[#10141C] bg-gray-800;
+  }
+  .hljs-comment,
+  .hljs-quote {
+    @apply text-gray-300 italic;
+  }
+  .hljs-doctag,
+  .hljs-formula,
+  .hljs-keyword {
+    @apply text-[#c678dd];
+  }
+  .hljs-deletion,
+  .hljs-name,
+  .hljs-section,
+  .hljs-selector-tag,
+  .hljs-subst {
+    @apply text-[#e06c75];
+  }
+  .hljs-literal {
+    @apply text-[#56b6c2];
+  }
+  .hljs-addition,
+  .hljs-attribute,
+  .hljs-meta .hljs-string,
+  .hljs-regexp,
+  .hljs-string {
+    @apply text-[#98c379];
+  }
+  .hljs-attr,
+  .hljs-number,
+  .hljs-selector-attr,
+  .hljs-selector-class,
+  .hljs-selector-pseudo,
+  .hljs-template-variable,
+  .hljs-type,
+  .hljs-variable {
+    @apply text-[#d19a66];
+  }
+  .hljs-bullet,
+  .hljs-link,
+  .hljs-meta,
+  .hljs-selector-id,
+  .hljs-symbol,
+  .hljs-title {
+    @apply text-[#61aeee];
+  }
+  .hljs-built_in,
+  .hljs-class .hljs-title,
+  .hljs-title.class_ {
+    @apply text-[#e6c07b];
+  }
+  .hljs-emphasis {
+    @apply italic;
+  }
+  .hljs-strong {
+    @apply font-bold;
+  }
+  .hljs-link {
+    @apply underline;
+  }
 }

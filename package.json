@@ -24,7 +24,9 @@
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.6",
+    "@toast-ui/editor": "^3.2.2",
     "gray-matter": "^4.0.3",
+    "highlight.js": "^11.11.1",
     "markdown-it-front-matter": "^0.2.4",
     "tailwindcss": "^4.1.6"
   }
