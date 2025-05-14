@@ -1,20 +1,26 @@
-import { defineConfig } from "vite";
-import path from "path";
-import mdPlugin from "./src/md-plugin";
-import tailwindcss from "@tailwindcss/vite";
+import { defineConfig } from 'vite';
 
 export default defineConfig({
-  root: "src",
-  plugins: [mdPlugin(), tailwindcss()],
-  server: { port: 5200 },
-  build: {
-    outDir: path.resolve(__dirname, "dist"),
-    emptyOutDir: true,
-    rollupOptions: {
-      input: path.resolve(__dirname, "src/index.html"),
-    },
+  server: {
+    // Remove historyApiFallback as it's not a valid option in Vite
   },
   resolve: {
-    alias: { "@": path.resolve(__dirname, "src") },
+    alias: {
+      '@': '/src',
+    },
   },
+  plugins: [
+    {
+      name: 'handle-html5-routing',
+      configureServer(server) {
+        server.middlewares.use((req, res, next) => {
+          // Handle /studio route specifically
+          if (req.url === '/studio') {
+            req.url = '/'; // Rewrite to index.html
+          }
+          next();
+        });
+      },
+    },
+  ],
 });
