@@ -59,15 +59,7 @@ renderMenu(sidebar);
 
 // Handle browser navigation (back/forward)
 window.addEventListener("popstate", () => {
-  const path = location.pathname;
-  if (path === "/studio") {
-    const docElement = document.getElementById("doc");
-    if (docElement) {
-      renderStudio(docElement);
-    }
-  } else {
-    renderPage(path);
-  }
+  renderPage(location.pathname);
 });
 
 function renderMenu(menuElement: HTMLElement): void {
